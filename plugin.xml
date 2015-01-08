@@ -31,7 +31,7 @@
 		</config-file>
 
 		<source-file src="src/android/com/v/c/VideoCompressor.java" target-dir="src/com/v/c"/>
-		 <source-file src="src/android/com/example/DemoClient.java" target-dir="src/com/example"/>
+		 <source-file src="src/android/example/DemoClient.java" target-dir="src/example"/>
 		 <source-file src="src/android/com/netcompss/ffmpeg4android/FFMpegRemoteServiceBridgeCompression.java" target-dir="src/com/netcompss/ffmpeg4android"/>
 		 <source-file src="src/android/com/netcompss/ffmpeg4android/LicenseCheckJNI.java" target-dir="src/com/netcompss/ffmpeg4android"/>
 		 <source-file src="src/android/com/netcompss/ffmpeg4android/MainAct.java" target-dir="src/com/netcompss/ffmpeg4android"/>
