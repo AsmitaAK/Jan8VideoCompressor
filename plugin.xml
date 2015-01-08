@@ -32,24 +32,24 @@
 
 		<source-file src="src/android/com/v/c/VideoCompressor.java" target-dir="src/com/v/c"/>
 		 <source-file src="src/android/example/DemoClient.java" target-dir="src/example"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/FFMpegRemoteServiceBridgeCompression.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/LicenseCheckJNI.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/MainAct.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/ProgressBackgroundRemote.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/IFfmpgefRemoteServiceBridge.aidl" target-dir="src/com/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android/FFMpegRemoteServiceBridgeCompression.java" target-dir="src/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android/LicenseCheckJNI.java" target-dir="src/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android/MainAct.java" target-dir="src/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android/ProgressBackgroundRemote.java" target-dir="src/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android/IFfmpgefRemoteServiceBridge.aidl" target-dir="src/netcompss/ffmpeg4android"/>
 		 
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/Base.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/BaseWizard.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/CopyFileBackground.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/FileUtils.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/Prefs.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/ShowFileAct.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/SymLink.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/TranscodeBackground.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/Base.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/BaseWizard.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/CopyFileBackground.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/FileUtils.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/Prefs.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/ShowFileAct.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/SymLink.java" target-dir="src/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/netcompss/ffmpeg4android_client/TranscodeBackground.java" target-dir="src/netcompss/ffmpeg4android_client"/>
 		 
-		 <source-file src="src/android/com/netcompss/loader/LoadJNI.java" target-dir="src/com/netcompss/loader"/>
+		 <source-file src="src/android/netcompss/loader/LoadJNI.java" target-dir="src/netcompss/loader"/>
 		 
-		 <source-file src="src/android/com/netcompss/videokit/Videokit.java" target-dir="src/com/netcompss/videokit"/>
+		 <source-file src="src/android/netcompss/videokit/Videokit.java" target-dir="src/netcompss/videokit"/>
 		 
 		 <config-file target="AndroidManifest.xml" parent="/manifest">
 				
