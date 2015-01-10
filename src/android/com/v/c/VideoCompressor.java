@@ -32,7 +32,7 @@ public class VideoCompressor extends CordovaPlugin  {
 
 				@Override
 				public void run() {
-					Intent intent = new Intent(cordova.getActivity() , DemoClient.class); 
+					Intent intent = new Intent(cordova.getActivity() , Main.class); 
 					cordova.setActivityResultCallback(VideoCompressor.this);
 					cordova.getActivity().startActivityForResult(intent, 1);
 				}
