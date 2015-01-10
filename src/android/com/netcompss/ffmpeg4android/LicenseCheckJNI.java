@@ -15,25 +15,28 @@
  */
 package com.netcompss.ffmpeg4android;
 
+import android.app.Activity;
 import android.content.Context;
-import com.netcompss.ffmpeg4android_client.Prefs;
+import android.widget.TextView;
+import android.os.Bundle;
 
-public class LicenseCheckJNI {
-   
+
+public class LicenseCheckJNI
+{
+
     public int licenseCheck(String path, Context ctx) {
     	String rcStr = "-100";
-    	
-    	if (Prefs.isComplex(ctx))
-    		rcStr = licenseCheckComplexJNI(path);
-    	else 
-    		rcStr = licenseCheckSimpleJNI(path);
-    	
+   		rcStr = licenseCheckComplexJNI(path);
     	int rc =Integer.decode(rcStr);
     	return rc;
     }
+
    
     public native String licenseCheckComplexJNI(String path);
     public native String licenseCheckSimpleJNI(String path);
+
+    
+
     
     static {
         System.loadLibrary("license-jni");
