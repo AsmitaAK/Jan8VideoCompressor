@@ -43,14 +43,14 @@
 		 
 		 <source-file src="src/android/com/netcompss/loader/LoadJNI.java" target-dir="src/com/netcompss/loader"/>
 		 <!-- Layout Files -->
-		 <source-file src="layout/ffmpeg_demo_client" target-dir="res/layout"/>
-		 <source-file src="layout/ffmpeg_demo_client_1" target-dir="res/layout"/>
-		 <source-file src="layout/ffmpeg_demo_client_2" target-dir="res/layout"/>
-		 <source-file src="layout/ffmpeg_demo_client_3" target-dir="res/layout"/>
-		 <source-file src="layout/main" target-dir="res/layout"/>  
-		 <source-file src="menu/main.xml" target-dir="res/menu"/>  
+		 <source-file res="layout/ffmpeg_demo_client" target-dir="res/layout"/>
+		 <source-file res="layout/ffmpeg_demo_client_1" target-dir="res/layout"/>
+		 <source-file res="layout/ffmpeg_demo_client_2" target-dir="res/layout"/>
+		 <source-file res="layout/ffmpeg_demo_client_3" target-dir="res/layout"/>
+		 <source-file res="layout/main" target-dir="res/layout"/>  
+		 <source-file res="menu/main.xml" target-dir="res/menu"/>  
 		  <!-- Values Files -->
-		   <source-file src="values/styles.xml" target-dir="values"/>  
+		   <source-file res="values/styles.xml" target-dir="values"/>  
 		   <config-file target="res/values/strings.xml" parent="resources">
 		   <string name="welcome">FFmpeg4Android remote service Management</string>
     		<string name="email">android@netcompss.com</string>
