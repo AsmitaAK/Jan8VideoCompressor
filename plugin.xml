@@ -48,7 +48,7 @@
 		 <source-file src="layout/ffmpeg_demo_client_2" target-dir="res/layout"/>
 		 <source-file src="layout/ffmpeg_demo_client_3" target-dir="res/layout"/>
 		 <source-file src="layout/main" target-dir="res/layout"/>  
-		 
+		 <source-file src="menu/main.xml" target-dir="res/menu"/>  
 		  <!-- Values Files -->
 		   <source-file src="values/styles.xml" target-dir="values"/>  
 		   <config-file target="res/values/strings.xml" parent="resources">
