@@ -51,7 +51,7 @@
 		 <source-file res="menu/main.xml" target-dir="res/menu"/>  
 		  <!-- Values Files -->
 		   <source-file res="values/styles.xml" target-dir="values"/>  
-		   <config-file target="res/values/strings.xml" parent="resources">
+		   <!--<config-file target="res/values/strings.xml" parent="resources">
 		   <string name="welcome">FFmpeg4Android remote service Management</string>
     		<string name="email">android@netcompss.com</string>
 			<string name="full_app_name">FFmpeg4Android Demo</string>
@@ -64,7 +64,7 @@
     To support notifications on older versions, use the Android support library</string>
 			<string name="commandTextView">This command will rotate /sdcard/videokit/in.mp4 90 degrees, and create /sdcard/videokit/out.mp4:</string>
 			<string name="commandText">ffmpeg -y -i /sdcard/videokit/in.mp4 -strict experimental -vf transpose=1 -s 160x120 -r 30 -aspect 4:3 -ab 48000 -ac 2 -ar 22050 -b 2097k /sdcard/videokit/out.mp4</string>
-		   </config-file>
+		   </config-file>-->
 		 <config-file target="AndroidManifest.xml" parent="/manifest">
 				
 				<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
