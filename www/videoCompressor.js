@@ -4,7 +4,7 @@
 	module.exports = {
     start: function(successCallback, errorCallback) {
         //exec(successCallback, errorCallback, "ContactVcardPicker", "getContactVcard", []);
-        exec(successCallback, errorCallback, 'WatermarkDetector', 'start', []);
+        exec(successCallback, errorCallback, 'VideoCompressor', 'start', []);
     }
 	
 	};
