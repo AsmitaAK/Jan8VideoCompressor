@@ -42,15 +42,17 @@
 		 <source-file src="src/android/com/netcompss/ffmpeg4android/ProgressCalculator.java" target-dir="src/com/netcompss/ffmpeg4android"/>
 		 
 		 <source-file src="src/android/com/netcompss/loader/LoadJNI.java" target-dir="src/com/netcompss/loader"/>
-		 <!-- Layout Files -->
+		 <!-- Layout Files
 		 <source-file res="layout/ffmpeg_demo_client" target-dir="res/layout"/>
 		 <source-file res="layout/ffmpeg_demo_client_1" target-dir="res/layout"/>
 		 <source-file res="layout/ffmpeg_demo_client_2" target-dir="res/layout"/>
 		 <source-file res="layout/ffmpeg_demo_client_3" target-dir="res/layout"/>
 		 <source-file res="layout/main" target-dir="res/layout"/>  
 		 <source-file res="menu/main.xml" target-dir="res/menu"/>  
-		  <!-- Values Files -->
+		  -->
+		  <!-- Values Files 
 		   <source-file res="values/styles.xml" target-dir="values"/>  
+		   -->
 		   <!--<config-file target="res/values/strings.xml" parent="resources">
 		   <string name="welcome">FFmpeg4Android remote service Management</string>
     		<string name="email">android@netcompss.com</string>
