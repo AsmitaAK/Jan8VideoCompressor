@@ -29,77 +29,81 @@
 			<param name="android-package" value="com.v.c.VideoCompressor" />
 		  </feature>
 		</config-file>
-
+			<!-- source Files -->
 		<source-file src="src/android/com/v/c/VideoCompressor.java" target-dir="src/com/v/c"/>
-		 <source-file src="src/android/com/example/DemoClient.java" target-dir="src/com/example"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/FFMpegRemoteServiceBridgeCompression.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/LicenseCheckJNI.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/MainAct.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/ProgressBackgroundRemote.java" target-dir="src/com/netcompss/ffmpeg4android"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android/IFfmpgefRemoteServiceBridge.aidl" target-dir="src/com/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/com/examples/ffmpeg4android/Main.java" target-dir="src/com/examples/ffmpeg4android"/>
+		 <source-file src="src/android/com/examples/ffmpeg4android/ProgressBarExample.java" target-dir="src/com/examples/ffmpeg4android"/>
+		 <source-file src="src/android/com/examples/ffmpeg4android/ProgressBarWithNotificationExample.java" target-dir="src/com/examples/ffmpeg4android"/>
+		 <source-file src="src/android/com/examples/ffmpeg4android/SimpleExample.java" target-dir="src/com/examples/ffmpeg4android"/>
 		 
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/Base.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/BaseWizard.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/CopyFileBackground.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/FileUtils.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/Prefs.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/ShowFileAct.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/SymLink.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
-		 <source-file src="src/android/com/netcompss/ffmpeg4android_client/TranscodeBackground.java" target-dir="src/com/netcompss/ffmpeg4android_client"/>
+		 <source-file src="src/android/com/netcompss/ffmpeg4android/GeneralUtils.java" target-dir="src/com/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/com/netcompss/ffmpeg4android/LicenseCheckJNI.java" target-dir="src/com/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/com/netcompss/ffmpeg4android/Prefs.java" target-dir="src/com/netcompss/ffmpeg4android"/>
+		 <source-file src="src/android/com/netcompss/ffmpeg4android/ProgressCalculator.java" target-dir="src/com/netcompss/ffmpeg4android"/>
 		 
 		 <source-file src="src/android/com/netcompss/loader/LoadJNI.java" target-dir="src/com/netcompss/loader"/>
 		 
-		 <source-file src="src/android/com/netcompss/videokit/Videokit.java" target-dir="src/com/netcompss/videokit"/>
+		 
+		 
+		 
 		 
 		 <config-file target="AndroidManifest.xml" parent="/manifest">
 				
 				<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 				<uses-permission android:name="android.permission.WAKE_LOCK" /> 
-				 <activity android:name="com.v.c.VideoCompressor" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+				
+		<activity android:name="com.v.c.VideoCompressor" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             	  android:windowSoftInputMode="stateHidden"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-               
+                </intent-filter>
+        </activity>
+        
+       <activity android:name="com.examples.ffmpeg4android.SimpleExample" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+                  android:windowSoftInputMode="stateHidden"
+                  android:label="Simple Example">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
              </intent-filter>
         </activity>
         
-       <activity android:name="com.netcompss.ffmpeg4android.MainAct"
-                  android:label="@string/app_name">
-            
-        </activity>
-        
-        
-        <activity android:name="com.example.DemoClient" 
+         <activity android:name="com.examples.ffmpeg4android.Main" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
                   android:windowSoftInputMode="stateHidden"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                
              </intent-filter>
         </activity>
-        
-        
-         <activity android:name="com.netcompss.ffmpeg4android_client.ShowFileAct">
+		
+       <activity android:name="com.examples.ffmpeg4android.ProgressBarExample" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+                  android:windowSoftInputMode="stateHidden"
+                  android:label="ProgressBar Example">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
              </intent-filter>
         </activity>
    
-   
+   		<activity android:name="com.examples.ffmpeg4android.ProgressBarWithNotificationExample" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+                  android:windowSoftInputMode="stateHidden"
+                  android:label="ProgressBar and Notification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+             </intent-filter>
+        </activity>
+
         
-        <service android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridgeCompression" 
-        		 android:process=":remote"
-        		 android:exported="true">
-               <intent-filter><action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"></action></intent-filter> 
-        </service>
+        
 			</config-file>
 	
 			
 
 	  <source-file src="libs/armeabi-v7a/liblicense-jni.so" target-dir="libs/armeabi-v7a" framework="true"/>
 	  <source-file src="libs/armeabi-v7a/libloader-jni.so" target-dir="libs/armeabi-v7a" framework="true"/>
-		<source-file src="libs/armeabi-v7a/libvideokit.so" target-dir="libs/armeabi-v7a" framework="true"/>
-		<source-file src="libs/android-support-v4.jar" target-dir="libs" framework="true"/>
+	  <source-file src="libs/armeabi-v7a/libvideokit.so" target-dir="libs/armeabi-v7a" framework="true"/>
+	  <source-file src="libs/armeabi-v7a/libvideokit.so.small" target-dir="libs/armeabi-v7a" framework="true"/>
+	  <source-file src="libs/android-support-v4.jar" target-dir="libs" framework="true"/>
 
 	  </platform>
 
